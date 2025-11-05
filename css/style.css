@@ -1,7 +1,7 @@
 :root {
-    --font-base: 'dm-sans', sans-serif;
-    --color-text: #283106;
-    --color-bg: #aab992;
+    --font-base: "minion-pro", serif;
+    --color-text: #000000;
+    --color-bg: #eeeed8;
     --font-title: 'garamond-premier-pro';
 }
 
