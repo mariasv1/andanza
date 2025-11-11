@@ -1,0 +1,18 @@
+#logo {
+    font-size: 12rem;
+    font-family: var(--font-title);
+
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+    text-align: 60%;
+
+}
+.demo-3 {
+	--color-text: #320065;
+    --color-bg: #d02d55;
+    --color-link: #ffffff;
+    --color-link-hover: #000000;
+    --color-title: #320065;
+    --filter-img: sepia(1) saturate(1) contrast(180%) brightness(80%) hue-rotate(295deg);
+}

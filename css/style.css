@@ -13,8 +13,10 @@ body {
     padding: 0;
     margin: 2000;
 }
-p {
+#parrafo-inicio p {
     text-align: center;
+    width: 80%;
+    margin: 2em auto;
 }
 a {
     color: var(--color-text);
@@ -109,16 +111,6 @@ footer#main-footer {
     padding: 0.25em 0.5em;
     font-weight: 100;
     font-size: 2rem;
-}
-#logo {
-    font-size: 12rem;
-    font-family: var(--font-title);
-
-    margin: 0 auto;
-    display: block;
-    width: auto;
-    text-align: center;
-
 }
 
 .button {
