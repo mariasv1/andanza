@@ -2,17 +2,17 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Andanza" />
-    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
     <link rel="stylesheet" href="https://use.typekit.net/ebn0sjx.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> andanza </title>
     <!-- favicon -->
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
     <!-- Open Graph Metadata -->
     <meta property="og:title" content="andanza">
     <meta property="og:description"
@@ -22,8 +22,10 @@
     <meta property="og:type" content="website">
     <!-- css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/rastrodeimagenes.css">
+    <link rel="stylesheet" href="./css/galeria.css">
 </head>
 </head>
 
@@ -32,28 +34,72 @@
         <p>Ciudad de México</p>
     </header>
 
+    <section id="rastro-container">
+        <h1> <img src="img/andanza-logo.svg" id="logo" alt="Andanza" /></h1>
+
+        <div class="content" id="rastro">
+            <img class="img-web" src="img-web/content_img1.jpg" alt="Some image" />
+            <img class="img-web" src="img-web/content_img2.jpg" alt="Some image" />
+            <img class="img-web" src="img-web/content_img4.jpg" alt="Some image" />
+            <img class="img-web" src="img-web/content_img3.jpg" alt="Some image" />
+            <img class="img-web" src="img-web/content_img5.jpg" alt="Some image" />
+            <img class="img-web" src="img-web/content_img6.jpg" alt="Some image" />
+            <img class="img-web" src="img-web/content_img7.jpg" alt="Some image" />
+            <img class="img-web" src="img-web/content_img8.jpg" alt="Some image" />
+            <img class="img-web" src="img-web/content_img9.jpg" alt="Some image" />
+            <img class="img-web" src="img-web/content_img11.jpg" alt="Some image" />
+            <img class="img-web" src="img-web/content_img10.jpg" alt="Some image" />
+            <img class="img-web" src="img-web/content_img12.jpg" alt="Some image" />
+            <img class="img-web" src="img-web/content_img13.jpg" alt="Some image" />
+            
+        </div><!--/content-->
+    </section>
     <main class="container">
 
         <section class="row" id="andanza">
-            <div class="twelve columns">
-                <h1>Andanza</h1>
-                <div class="content">
-                    <img src="img/andanza-logo.svg" id="logo" alt="Andanza" />
-                    <img class="content__img" src="img/1.jpg" alt="Some image" />
-                </div><!--/content-->            
-            </div>
             <div id="parrafo-inicio">
-                <p> Andanza es un proyecto que busca generar conciencia sobre la movilidad en la vejez. Propone entender el
+                <p> Andanza es un proyecto que busca generar conciencia sobre la movilidad en la vejez. Propone entender
+                    el
                     cuerpo envejecido como un territorio vivo que transporta historias y experiencias.
                 </p>
                 <p> A través de esta mirada, visibiliza cómo la ciudad puede volverse una barrera y un espacio de
-                    aislamiento para las personas mayores. Invita a repensar la accesibilidad y el derecho a moverse desde
+                    aislamiento para las personas mayores. Invita a repensar la accesibilidad y el derecho a moverse
+                    desde
                     una perspectiva más humana y sensible.
-                </p>    
+                </p>
+            </div>
+        </section>
+        <section class="row" id="testimonios">
+            <h2>Testimonios</h2>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Desde que me caí por las banquetas rotas; camino por 45 minutos de puerta
+                        a puerta dentro de mi casa</div>
+                    <div class="swiper-slide">Las banquetas son el problema mas grande para mi; el otro día me caí sobre
+                        las rodillas y apenas se está recuperando</div>
+                    <div class="swiper-slide">Salir a la calle siempre me trae una sensación de estres, ya no alcanzo
+                        las prisas de la ciudad</div>
+                    <div class="swiper-slide">Ya no salimos a pasear por miedo de sufrir una accidente, entonces salir a
+                        comprar cosas para la casa es buena excusa para salir</div>
+                    <div class="swiper-slide">Nuestros hijos ya no nos dejan salir para prevenir accidentes </div>
+                    <div class="swiper-slide">Los puestos de ambulantes estorban en la banqueta, entonces uno tiene que
+                        caminar por la calle, pero eso causa accidentes </div>
+                    <div class="swiper-slide">Ya es esfuerzo suficiente todas las cosas que tengo que hacer en la casa;
+                        por eso no tengo necesidad o tiempo de ejercitar mi cuerpo</div>
+                    <div class="swiper-slide"> El día que me encuentro en el parque para el taller de bordado es el mas
+                        especial de mi semana, pues camino un poco por la tarde y tengo espacio para estar con mis
+                        compañeras</div>
+                    <div class="swiper-slide">Me gusta acompañar a personas aún mayores que yo a caminar. Aunque mi
+                        cuerpo también empieza a sentirse más pesado, valoro mucho la compañía; en estos años, compartir
+                        el paso y la conversación se vuelve algo muy importante</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </section>
 
-     
+
     </main>
     <footer class="container">
         <p>Derechos reservados &copy; 2025 Andanza / CDMX
@@ -62,6 +108,11 @@
             </div>
             </p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/imagesloaded.pkgd.min.js"></script>
+    <script src="./js/rastrodeimagenes.js"></script>
+    <script src="./js/galeria.js"></script>
 </body>
 
 </html>
