@@ -5,6 +5,10 @@
     --font-title: 'garamond-premier-pro';
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /* Estilos default */
 body {
     font-family: var(--font-base);
@@ -13,15 +17,33 @@ body {
     padding: 0;
 }
 
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: transparent; /* ajusta si lo necesitas */
+}
+
 .header p {
     margin: 0;
-    padding: 0;
-    text-align: left;
     font-size: 2rem;
-    font-weight: 50;
+    font-weight: 600;
+    width: 100%;
+    max-width: none;
 }
-.header.right p{
+
+.header .left {
+    text-align: left;
+}
+
+.header .right {
     text-align: right;
+    transition: opacity 0.3s ease;
 }
 #parrafo-inicio {
     margin-top: 200px;
@@ -31,7 +53,6 @@ body {
 }
 #parrafo-inicio p {
     text-align: center;
-    width: 80%;
     margin: 4rem auto;
     font-size: 2.5rem;
     font-weight: 30;
