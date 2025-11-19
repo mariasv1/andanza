@@ -158,7 +158,7 @@
                 ease: "expo.out",
                 x: mousePos.x - img.rect.width/2,
                 y: mousePos.y - img.rect.height/2,
-                opacity: 1
+                opacity: .5
             }, 0)
             // then make it disappear
             .to(img.DOM.el, {
