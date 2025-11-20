@@ -291,4 +291,12 @@ margin-bottom: 200px;
     height: auto;
     width: 100%;
     aspect-ratio: 1 / 1.4;
-    object-fit: cover;}
+    object-fit: cover;
+}
+
+#gif-andanza{
+    width: 50%;
+    max-width: 640%;
+    margin: 50px auto;
+    display: block;
+}
