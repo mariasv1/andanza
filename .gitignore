@@ -8,7 +8,7 @@ _site/
 Gemfile.lock
 .bundle/
 vendor/
-
+video/
 # Node modules (si usas Node.js)
 node_modules/
 
