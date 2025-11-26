@@ -102,19 +102,24 @@
             this.zIndexVal = 1;
             // mouse distance required to show the next image
             this.threshold = 50;
+            // tiempo mínimo entre apariciones de imágenes (throttling) en milisegundos
+            this.minInterval = 300; // ajusta este valor para cambiar la frecuencia
+            this.lastTime = 0;
             // render the images
             requestAnimationFrame(() => this.render());
         }
         render() {
+            const now = performance.now();
             // get distance between the current mouse position and the position of the previous image
             let distance = getMouseDistance();
             // cache previous mouse position
             cacheMousePos.x = MathUtils.lerp(cacheMousePos.x || mousePos.x, mousePos.x, 0.1);
             cacheMousePos.y = MathUtils.lerp(cacheMousePos.y || mousePos.y, mousePos.y, 0.1);
 
-            // if the mouse moved more than [this.threshold] then show the next image
-            if ( distance > this.threshold ) {
+            // if the mouse moved more than [this.threshold] and ha pasado el intervalo mínimo, then show the next image
+            if ( distance > this.threshold && (now - this.lastTime) > this.minInterval ) {
                 this.showNextImage();
+                this.lastTime = now;
 
                 ++this.zIndexVal;
                 this.imgPosition = this.imgPosition < this.imagesTotal-1 ? this.imgPosition+1 : 0;

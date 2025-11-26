@@ -30,8 +30,9 @@
 </head>
 
 <body>
-    <header id="header-inicio" class="header sticky-wrapper">
-        <p class="left"> Ciudad de México </p>
+    <header class="header stickywrapper">
+        <!-- Feedback: Si es un header y tiene la clase #headerTitle, entonces debe ser un h1, no un párrafo -->
+        <h1 class="right" id="headerTitle">Andanza</h1>
     </header>
 
     <section id="rastro-container">
@@ -55,9 +56,9 @@
         </div><!--/content-->
     </section>
     <main>
-        <header class="header sticky-wrapper">
+        <header class="header">
             <!-- Feedback: Si es un header y tiene la clase #headerTitle, entonces debe ser un h1, no un párrafo -->
-            <h1 class="right" id="headerTitle">Andanza</h1>
+            <h2 class="right" id="headerTitle">Nosotros</h2>
         </header>
         <section class="container" id="andanza">
             <div id="parrafo-inicio" class="row text-container">
@@ -72,9 +73,9 @@
                 </p>
             </div>
         </section>
-        <header class="header sticky-wrapper">
+        <header class="header">
             <!-- Tu markup de header debe ser el siguiente tag de título en jerarquía. -->
-            <p class="right">Testimonios</p>
+            <h2 class="right">Testimonios</h2>
         </header>
         <div class="container">
             <section class="row" id="testimonios">
@@ -82,12 +83,12 @@
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <p>Desde que me caí por las banquetas rotas; camino por 45 minutos de puerta
+                            <p>Desde que me caí por las banquetas rotas, camino por 45 minutos de puerta
                                 a puerta dentro de mi casa
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <p>Las banquetas son el problema mas grande para mi; el otro día me caí sobre
+                            <p>Las banquetas son el problema mas grande para mi, el otro día me caí sobre
                                 las rodillas y apenas se está recuperando
                             </p>
                         </div>
@@ -112,19 +113,18 @@
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <p>Ya es esfuerzo suficiente todas las cosas que tengo que hacer en la casa;
+                            <p>Ya es esfuerzo suficiente todas las cosas que tengo que hacer en la casa,
                                 por eso no tengo necesidad o tiempo de ejercitar mi cuerpo
                             </p>
                         </div>
                         <div class="swiper-slide">
                             <p> El día que me encuentro en el parque para el taller de bordado es el mas
                                 especial de mi semana, pues camino un poco por la tarde y tengo espacio para estar con
-                                mis
-                                compañeras
+                                mis compañeras
                             </p>
                         </div>
                         <div class="swiper-slide">
-                            <p>mi cuerpo también empieza a sentirse más pesado, valoro mucho la compañía; en estos años,
+                            <p>Mi cuerpo también empieza a sentirse más pesado, valoro mucho la presencia de familiares, 
                                 compartir el paso y la conversación se vuelve algo muy importante
                             </p>
                         </div>
@@ -136,16 +136,21 @@
             </section>
 
 
-
-            <section id="video">
-                <video autoplay muted playsinline controls src="./video/video1.mp4"> </video>
-            </section>
+            
         </div>
-
+        <header class="header">
+            <!-- Tu markup de header debe ser el siguiente tag de título en jerarquía. -->
+            <h2 class="right"> Audiovisual </h2>
+        </header>
+        <section id="video">
+            <video autoplay muted playsinline controls src="./video/video1.mp4" alt="" id="audiovisual"> </video>
+        </section>
+        <header class="header">
+            <!-- Tu markup de header debe ser el siguiente tag de título en jerarquía. -->
+            <h2 class="right">Tipografía</h2>
+        </header>
         <section class="container" id="tipografía">
-            <h3>
                 <img src="./img-web/fotoabuela.jpg" alt="fotoabuela">
-            </h3>
 
             <div id="bloque-testimonio"" class=" row text-container">
                 <p> Gracias por considerarme en este proyecto que me brinda la oportunidad de expresar lo que siento al
