@@ -5,13 +5,15 @@
   margin-top: 100px;
 }
   
-  @font-face {
-    font-family: 'Pulsos';
-    src: url('fonts/Pulsos.woff2') format('woff2'),
-         url('fonts/Pulsos.woff') format('woff');
-    font-display: swap;
-  }
-  
+@font-face {
+  font-family: 'Pulsos';
+  src: url('Pulsos-Regular.woff2') format('woff2'),
+      url('Pulsos-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
   /* 2. La aplicas solo a los testimonios dentro del slider */
   #testimonios .swiper-slide p {
     font-family: 'Pulsos', serif;
