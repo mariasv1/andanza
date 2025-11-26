@@ -8,26 +8,36 @@
     text-align: 60%;
 
 }
-#rastro-container{
+
+#rastro-container {
     width: 100%;
     position: relative;
     height: 100vh;
     overflow: hidden;
 }
+
 #rastro {
-	--color-text: #320065;
-	--color-bg: #d02d55;
-	--color-link: #ffffff;
-	--color-link-hover: #000000;
-	--color-title: #320065;
-	--filter-img: sepia(1) saturate(1) contrast(180%) brightness(80%) hue-rotate(295deg);
-	position: absolute;
-	left: 0;
-	top: 0;
+    --color-text: #320065;
+    --color-bg: #d02d55;
+    --color-link: #ffffff;
+    --color-link-hover: #000000;
+    --color-title: #320065;
+    --filter-img: sepia(1) saturate(1) contrast(180%) brightness(80%) hue-rotate(295deg);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
 }
-#rastro img{
+
+#rastro img {
     max-width: 420px;
     width: 15%;
     min-width: 100px;
-
+    /* 
+    Feedback:
+    Se requería posición absoluta para que las imágenes se desplazen en el contenedor correctamente */
+    position: absolute;
+    left: 0;
+    top: 0;
 }
