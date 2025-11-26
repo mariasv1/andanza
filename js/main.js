@@ -1,15 +1,22 @@
-const title = document.getElementById("headerTitle");
-
-window.addEventListener("scroll", () => {
-  const y = window.scrollY;
-
-  if (y < 600) {
-    title.textContent = "Andanza";
-  } else if (y < 1400) {
-    title.textContent = "Testimonios";
-  } else if (y < 2200) {
-    title.textContent = "Audiovisual";
-  } else {
-    title.textContent = "Tipografía";
-  }
+// Comportamiento sticky para headers usando Waypoints.js
+document.addEventListener('DOMContentLoaded', function() {
+  // Buscar todos los headers de sección
+  const sectionHeaders = document.querySelectorAll('header.header');
+  
+  // Procesar cada header de sección
+  sectionHeaders.forEach(function(sectionHeader) {
+    // Waypoint para cuando el header está a punto de salir por arriba
+    new Waypoint({
+      element: sectionHeader,
+      handler: function(direction) {
+        if (direction === 'up') {
+          sectionHeader.classList.remove('stuck');
+          // Cuando vuelve a entrar, quitar sticky
+        } else {
+          sectionHeader.classList.add('stuck');
+        }
+      },
+      offset: 0 // Se activa cuando el top del elemento toca el top del viewport
+    });
+  });
 });
