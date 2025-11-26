@@ -30,13 +30,12 @@
 </head>
 
 <body>
-    <header id="header-inicio" class="header">
+    <header id="header-inicio" class="header sticky-wrapper">
         <p class="left"> Ciudad de México </p>
-        <p class="right" id="headerTitle">Andanza</p>
     </header>
 
     <section id="rastro-container">
-        <h1> <img src="img/andanza-logo.svg" id="logo" alt="Andanza" /></h1>
+        <img src="img/andanza-logo.svg" id="logo" alt="Andanza" />
 
         <div class="content" id="rastro">
             <img class="img-web" src="img-web/content_img1.jpg" alt="Some image" />
@@ -56,7 +55,10 @@
         </div><!--/content-->
     </section>
     <main>
-
+        <header class="header sticky-wrapper">
+            <!-- Feedback: Si es un header y tiene la clase #headerTitle, entonces debe ser un h1, no un párrafo -->
+            <h1 class="right" id="headerTitle">Andanza</h1>
+        </header>
         <section class="container" id="andanza">
             <div id="parrafo-inicio" class="row text-container">
                 <p> Andanza es un proyecto que busca generar conciencia sobre la movilidad en la vejez. Propone entender
@@ -70,7 +72,8 @@
                 </p>
             </div>
         </section>
-        <header class="header">
+        <header class="header sticky-wrapper">
+            <!-- Tu markup de header debe ser el siguiente tag de título en jerarquía. -->
             <p class="right">Testimonios</p>
         </header>
         <div class="container">
@@ -176,11 +179,13 @@
             </div>
             </p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/waypoints@4.0.1/lib/noframework.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/imagesloaded.pkgd.min.js"></script>
     <script src="./js/rastrodeimagenes.js"></script>
     <script src="./js/galeria.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
