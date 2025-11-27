@@ -29,13 +29,18 @@ body {
 }
 
 /* Header de sección que se mueve con el flujo */
+#main-footer,
 .header {
     position: relative;
     width: 100%;
     padding: 20px 40px;
     z-index: 999;
 }
-
+#main-footer {
+    padding-bottom: 3rem;
+    display: inline-block;
+    width: 100%;
+}
 /* Cuando el header de sección se vuelve sticky */
 header.header.stuck {
     position: fixed !important;
@@ -76,7 +81,7 @@ header.header.stuck {
 }
 .text-container p {
     text-align: center;
-    margin: 4rem auto;
+    margin: 9rem auto;
     font-size: 2.5rem;
     font-weight: 30;
     text-wrap-style: balance;
@@ -91,13 +96,20 @@ a:hover {
 }
 
 h1,
-h2 {
+h2, .left, .right {
   font-size: 2.5rem;
   font-weight: 500;   /* o el que quieras, pero igual para ambos */
   margin: 0;
   padding: 0;
 }
 
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
 h1 {
     float: left;
   }
@@ -112,8 +124,7 @@ h3 {
 
 p {
     max-width: 60ch;
-    margin-top: 90px auto;
-    margin: 90 auto;
+    margin: 90px auto;
 }
 code {
     background: var(--color-bg);
@@ -140,13 +151,6 @@ header#main-header nav {
     justify-content: space-between;
     align-items: center;
     padding: 1em 0;
-}
-
-footer#main-footer {
-    border-top: 1px solid var(--color-text);
-    margin-top: 2em;
-    text-align: center;
-    padding: 2em 0 1em 0;
 }
 
 /* Components */
@@ -276,4 +280,10 @@ margin-bottom: 200px;
                  /* interlineado cómodo */
             /* espacio entre párrafos */
   }
+  .tipografia-especial {
+    font-family: 'Pulsos', sans-serif;
+    font-size: 18rem; 
+    margin: 20rem 0!important;
+
+}
   

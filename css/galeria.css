@@ -17,13 +17,14 @@
   /* 2. La aplicas solo a los testimonios dentro del slider */
   #testimonios .swiper-slide p {
     font-family: 'Pulsos', serif;
-    font-size: 3rem;
+    font-size: 4rem;
     line-height: 1.4;
     margin: 0;
     justify-content: center;   /* centra el contenido horizontal */
     align-items: center;       /* ya lo tienes, centra vertical */
-    padding: 0 10vw;  
-    max-width: 60ch; 
+    padding: 0 10vw;
+    max-width: 60ch;
+    text-wrap-style: balance;
   }
 
   .swiper-slide {
