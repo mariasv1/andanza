@@ -17,6 +17,8 @@ body {
     color: var(--color-text);
     background: var(--color-bg);
     padding: 0;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 /* Estilos para el header sticky usando waypoints */
@@ -29,31 +31,19 @@ body {
 }
 
 /* Header de sección que se mueve con el flujo */
-#main-footer,
 .header {
-    position: relative;
+    position: sticky;
+    top: 0;
     width: 100%;
     padding: 20px 40px;
     z-index: 999;
 }
+
 #main-footer {
     padding-bottom: 3rem;
     display: inline-block;
     width: 100%;
-}
-/* Cuando el header de sección se vuelve sticky */
-header.header.stuck {
-    position: fixed !important;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1001;
-}
-
-/* Placeholder para mantener el espacio cuando el header se vuelve sticky */
-.header-placeholder {
-    display: block;
-    width: 100%;
+    padding: 20px 40px;
 }
 
 .header p {
