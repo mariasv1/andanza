@@ -64,7 +64,7 @@ body {
 .header .right {
     text-align: right;
     transition: opacity 0.3s ease;
-    width: 140px;
+    width: 100px;
 }
 
 #parrafo-inicio {
@@ -210,7 +210,7 @@ header#main-header nav {
 /* Espacaiado mejorado para secciones */
 section {
     
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     margin-bottom: 2rem;
 }
 
