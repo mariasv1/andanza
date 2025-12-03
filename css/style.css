@@ -4,7 +4,6 @@
     --font-base: "minion-pro", serif;
     --color-text: #000000;
     --color-bg: #eeeed8;
-    --font-title: 'garamond-premier-pro';
 }
 
 * {
@@ -37,13 +36,17 @@ body {
     width: 100%;
     padding: 20px 40px;
     z-index: 999;
+    text-transform: lowercase;
+    color: #cf4929;
 }
 
 #main-footer {
+ 
     padding-bottom: 3rem;
     display: inline-block;
     width: 100%;
     padding: 20px 40px;
+    color:#cf4929
 }
 
 .header p {
@@ -61,6 +64,7 @@ body {
 .header .right {
     text-align: right;
     transition: opacity 0.3s ease;
+    width: 140px;
 }
 
 #parrafo-inicio {
@@ -69,6 +73,7 @@ body {
     display: inline-block;
     width: 100%;
 }
+
 .text-container p {
     text-align: center;
     margin: 7rem auto;
@@ -76,21 +81,26 @@ body {
     font-weight: 30;
     text-wrap-style: balance;
 }
+
 a {
     color: var(--color-text);
     text-decoration: none;
 }
-a.active, 
+
+a.active,
 a:hover {
     color: aliceblue;
 }
 
 h1,
-h2, .left, .right {
-  font-size: 2rem;
-  font-weight: 500;   /* o el que quieras, pero igual para ambos */
-  margin: 0;
-  padding: 0;
+h2,
+.left,
+.right {
+    font-size: 2rem;
+    font-weight: 500;
+    /* o el que quieras, pero igual para ambos */
+    margin: 0;
+    padding: 0;
 }
 
 .left {
@@ -100,14 +110,17 @@ h2, .left, .right {
 .right {
     float: right;
 }
+
 h1 {
     float: left;
-  }
-  
-  h2 {
+}
+
+h2 {
     float: right;
-    background: #eeeed8; /* ajusta si lo necesitas */
-  }
+    background: #eeeed8;
+    /* ajusta si lo necesitas */
+}
+
 h3 {
     font-size: 1.5rem;
 }
@@ -116,6 +129,7 @@ p {
     max-width: 60ch;
     margin: 90px auto;
 }
+
 code {
     background: var(--color-bg);
 }
@@ -124,17 +138,20 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 video {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin-top: 250px;
-        margin-bottom: 250px
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 250px;
+    margin-bottom: 250px
 }
+
 /* layout */
 .nav-links {
     margin-bottom: 100px;
 }
+
 header#main-header nav {
     text-align: center;
     display: flex;
@@ -168,6 +185,7 @@ header#main-header nav {
     color: var(--color-bg);
     border-radius: 0;
 }
+
 .button:hover {
     background-color: var(--color-bg);
     color: var(--color-text);
@@ -191,17 +209,9 @@ header#main-header nav {
 
 /* Espacaiado mejorado para secciones */
 section {
+    
+    margin-top: 2rem;
     margin-bottom: 2rem;
-}
-
-/* Estilos para listas en criterios de evaluación */
-section ul {
-    margin-bottom: 1rem;
-}
-
-section li {
-    margin-bottom: 0.5rem;
-    line-height: 1.5;
 }
 
 /* Separadores visuales */
@@ -222,12 +232,13 @@ section h4 {
     color: rgba(255, 255, 255, 0.9);
     font-weight: 600;
 }
-article{
-margin-top: 200px; 
-margin-bottom: 200px;
+
+article {
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
 
-.img-testimonios { 
+.img-testimonios {
     max-width: 100%;
     height: auto;
     width: 100%;
@@ -235,15 +246,16 @@ margin-bottom: 200px;
     object-fit: cover;
 }
 
-#gif-andanza{
+#gif-andanza {
     width: 50%;
-    max-width: 640%;
+    max-width: 600px;
     margin: 50px auto;
     display: block;
 }
-#audiovisual{
+
+#audiovisual {
     width: 80%;
-    max-width: 1000%;
+    max-width: 1000px;
     margin: 200px auto;
     display: block;
 }
@@ -253,26 +265,36 @@ margin-bottom: 200px;
     width: 60%;
     margin: 0 auto;
     padding: 60px 0 0px 0;
-    display: block;/* Evita flex o grid inesperados */
-  }/* espacio arriba y abajo */
-  
-  /* Bloque de texto centrado */
-  #bloque-testimonio {
-    max-width: 100rem;       /* ancho de la columna de texto, ajusta 45–60rem */
-    margin: 0 auto;         /* CENTRA el bloque en la página */
-    text-align: center;     /* texto centrado, como en tu maqueta */
-  }
-  
-  /* Estilo de los párrafos dentro del bloque */
-  #bloque-testimonio p {
-      max-width: 900px;
-          /* ajusta al tamaño que estés usando */
-                 /* interlineado cómodo */
-            /* espacio entre párrafos */
-  }
-  .text-container p.tipografia-especial {
+    display: block;
+    /* Evita flex o grid inesperados */
+}
+
+/* espacio arriba y abajo */
+
+/* Bloque de texto centrado */
+#bloque-testimonio {
+    max-width: 100rem;
+    /* ancho de la columna de texto, ajusta 45–60rem */
+    margin: 0 auto;
+    /* CENTRA el bloque en la página */
+    text-align: center;
+    /* texto centrado, como en tu maqueta */
+}
+
+/* Estilo de los párrafos dentro del bloque */
+#bloque-testimonio p {
+    max-width: 900px;
+    text-wrap-style: balance;
+    /* ajusta al tamaño que estés usando */
+    /* interlineado cómodo */
+    /* espacio entre párrafos */
+}
+
+.tipografia-especial {
     font-size: 3.5rem;
     font-family: 'Pulsos', sans-serif;
-    margin: 15rem auto 15rem auto !important;  /* espaciado arriba y abajo */
+    margin: 15rem auto 15rem auto !important;
+    text-align: center;
+    text-wrap-style: balance;
+    /* espaciado arriba y abajo */
 }
-  
