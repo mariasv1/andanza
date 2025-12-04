@@ -64,7 +64,7 @@ body {
 .header .right {
     text-align: right;
     transition: opacity 0.3s ease;
-    width: 100px;
+    width: 120px;
 }
 
 #parrafo-inicio {
@@ -157,8 +157,15 @@ header#main-header {
     z-index: 1000;
 }
 
-header#main-header a {
-    color:#cf4929
+ a {
+    color:#cf4929;
+    transition: color 0.3s ease;    
+
+}
+
+a:hover {
+    color:black;
+    
 }
 /* Components */
 
